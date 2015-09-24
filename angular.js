@@ -41,7 +41,8 @@ var mainApp = angular.module("mainApps", ['ngRoute']);
             $scope.message = "Cytonn currencies is an online currency converter provided by Cytonn Investments in conjunction with cytonn technologies to give forex traders a reliable tool for international currency conversion.";
          });
            mainApp.controller('boardController', function($scope, $http) {
-            $http.get("http://www.w3schools.com/angular/customers.php").success(function(response){$scope.names = response.records;});
+            $http.get("http://www.w3schools.com/angular/customers.php")
+            .success(function(response){$scope.names = response.records;});
             $scope.message = "Cytonn currencies is an online currency converter provided by Cytonn Investments in conjunction with cytonn technologies to give forex traders a reliable tool for international currency conversion.";
          });
 
